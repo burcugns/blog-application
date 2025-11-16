@@ -2,7 +2,6 @@ const express = require("express");
 const sequelize = require("./config/connection");
 const userRoutes = require("./routes/user");
 const blogRoutes = require("./routes/blog");
-const categoryRoutes=require("./routes/category")
 const path = require("path");
 
 const app = express();
@@ -10,7 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
-app.use("/api/categories", categoryRoutes);
 app.use("/api/blogs", blogRoutes);
 
 
