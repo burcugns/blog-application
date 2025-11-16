@@ -12,6 +12,7 @@ A full-stack blog application built with Node.js, Express, and MySQL. Users can 
 ## Tech Stack
 
 - **Backend**: Node.js, Express.js
+- **Frontend** : HTML , CSS , JavaScript
 - **Database**: MySQL with Sequelize ORM
 - **Authentication**: JSON Web Tokens (JWT)
 - **Security**: bcrypt for password hashing
