@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+  </head>
+
+  <body>
+    <header>
+      <button class="logout-button" onclick="logout()">LOG OUT</button>
+    </header>
+
+    <main class="container">
+      <div class="blog-controls">
+        <button id="create-new-blog-button" onclick="openCreateBlogPanel()">
+          Create New Blog
+        </button>
+
+        <div id="create-blog-panel" class="hidden">
+          <label for="create-title">Title</label>
+          <input
+            id="create-title"
+            class="input-field"
+            type="text"
+            placeholder="Enter title"
+          />
+
+          <label for="create-content">Content</label>
+          <textarea
+            id="create-content"
+            class="input-field"
+            placeholder="Enter content"
+          ></textarea>
+        </div>
+
+        <button id="create-button" class="hidden" onclick="createBlog()">
+          Create
+        </button>
+        <button id="edit-button" class="hidden" onclick="editBlog()">
+          Save
+        </button>
+      </div>
+
+      <div id="blog-container"></div>
+    </main>
+
+    <script src="./assets/js/blog.js"></script>
+  </body>
+</html>

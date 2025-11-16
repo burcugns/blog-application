@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="main-content">
+        <article class="login-wrapper">
+          <section class="login-panel">
+            <header class="heading-container">
+              <h1 class="heading-title">Welcome To Tech Blog</h1>
+            </header>
+
+            <form class="login-form" id="login-form">
+              <fieldset class="form-group">
+                <label
+                  id="username-label"
+                  class="form-label hidden"
+                  for="username"
+                >
+                  Username
+                </label>
+                <input
+                  class="input-field hidden"
+                  id="username"
+                  name="username"
+                  placeholder="Enter User Name"
+                  type="text"
+                />
+
+                <label class="form-label" for="email">Email Address</label>
+                <input
+                  class="input-field"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  type="email"
+                  required
+                />
+              </fieldset>
+
+              <fieldset class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input
+                  class="input-field"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  type="password"
+                  required
+                />
+              </fieldset>
+
+              <button
+                id="login-button"
+                class="submit-button"
+                type="button"
+                onclick="login()"
+              >
+                Login
+              </button>
+
+              <button
+                id="signup-button"
+                class="submit-button hidden"
+                type="button"
+                onclick="register()"
+              >
+                Sign Up
+              </button>
+            </form>
+
+            <div class="sigup-link-container">
+              Don't have an account?
+              <a
+                id="login-signup-a"
+                class="signup-link"
+                href="#"
+                onclick="openSignupForm()"
+              >
+                Sign Up
+              </a>
+            </div>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <script src="assets/js/user.js"></script>
+  </body>
+</html>
