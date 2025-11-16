@@ -1,4 +1,3 @@
-// import all models
 const Category = require("./category");
 const User = require("./user");
 const Blog = require("./blog");
